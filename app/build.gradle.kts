@@ -23,12 +23,12 @@ plugins {
 
 android {
     namespace = "com.example.juicetracker"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.juicetracker"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -82,6 +82,7 @@ dependencies {
     implementation("androidx.room:room-ktx:${rootProject.extra["room_version"]}")
     implementation("com.google.accompanist:accompanist-themeadapter-material3:0.28.0")
     implementation("com.google.android.material:material:1.9.0")
+    implementation("androidx.compose.ui:ui-android:1.5.4")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 
